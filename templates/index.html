@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for Best Songs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Search for Best Songs of Recently Listened Artists</h1>
+        <div class="search-box">
+            <form method="POST">
+                <label for="artist">Enter recently listened artists (separated by comma):</label><br>
+                <input type="text" id="artist" name="artist"><br><br>
+                <input type="submit" value="Search">
+            </form>
+        </div>
+        <div class="music-note">
+            <img href="/images/static/music_note.png" alt="Music Note">
+        </div>
+    </div>
+</body>
+</html>

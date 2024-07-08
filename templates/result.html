@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+</head>
+<body>
+    <h1>Best Songs of Recently Listened Artists</h1>
+    <div class="song-list">
+        <ul>
+            {% for index, row in songs.iterrows() %}
+            <li>
+                <div class="song-details">
+                    <div class="artist">{{ row['Artist'] }}</div>
+                    <div class="song-name">{{ row['Song-Name'] }}</div>
+                    <div class="genre">{{ row['Genre'] }}</div>
+                    <div class="album">{{ row['Album/Movie'] }}</div>
+                    <div class="rating">{{ row['Rating'] }}</div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

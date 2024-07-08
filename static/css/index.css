@@ -1,0 +1,92 @@
+/* index.css */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #154f02, #082106); /* Gradient background */
+    margin: 0;
+    padding: 0;
+    animation: gradientAnimation 20s ease infinite alternate; /* Animation */
+}
+
+/* Gradient animation keyframes */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: auto; /* Center horizontally */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Set container height to full viewport height */
+    background-color: rgba(255, 255, 255, 0.9); /* Background color with opacity */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: #0e0101;
+}
+
+/* Search box styles */
+.search-box {
+    background-color: #306e00;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
+/* Form styles */
+form {
+    text-align: center;
+    color: whitesmoke;
+}
+
+/* Input styles */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Music note styles */
+.music-note {
+    text-align: center;
+}
+
+.music-note img {
+    width: 100px;
+    margin-top: 20px;
+}
